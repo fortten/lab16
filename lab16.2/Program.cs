@@ -32,12 +32,13 @@ namespace lab16._2
                 Console.WriteLine();
                 if (catalog[i].ItemPrice > max)
                 {
+                    max = catalog[i].ItemPrice;
                     itemName = catalog[i].ItemName;
                 }
             }
             Console.WriteLine("Самый дорогой товар - {0}", itemName);            
             Console.WriteLine("Для завершения нажмите любую клавишу на клавиатуре");
-            Console.ReadKey();
+            Console.ReadKey();           
         }
     }
     class Product
